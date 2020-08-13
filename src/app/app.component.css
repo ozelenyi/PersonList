@@ -1,0 +1,10 @@
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  background-color: grey;
+}
+
+h2 {
+  margin: 0;
+}
