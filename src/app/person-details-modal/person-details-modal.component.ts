@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatDialogRef } from "@angular/material/dialog";
+
+import { Person } from "../shared/person.model";
 
 @Component({
   selector: 'app-person-details-modal',
   templateUrl: './person-details-modal.component.html',
   styleUrls: ['./person-details-modal.component.css']
 })
-export class PersonDetailsModalComponent implements OnInit {
+export class PersonDetailsModalComponent {
 
-  constructor() { }
+  @Input() public person: Person;
 
-  ngOnInit() {
+  constructor(public matDialogRef: MatDialogRef<PersonDetailsModalComponent>) { }
+
+  public close() {
+    this.matDialogRef.close()
   }
-
 }

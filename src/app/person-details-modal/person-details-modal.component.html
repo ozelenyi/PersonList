@@ -1,0 +1,25 @@
+<button class="close" mat-button (click)="close()">X</button>
+
+<div mat-dialog-content>
+  <div class="avatar-container">
+    <img [src]="person.image_url || './assets/img/avatar-placeholder.png'" alt="avatar">
+  </div>
+  <div class="data-container">
+    <div class="field-container" *ngIf="person?.last_name">
+      <div class="field-label"> Name: </div>
+      <div class="field-value"> {{person.name}} </div>
+    </div>
+    <div class="field-container" *ngIf="person?.last_name">
+      <div class="field-label"> Last name: </div>
+      <div class="field-value"> {{person.last_name}} </div>
+    </div>
+    <div class="field-container" *ngIf="person?.age">
+      <div class="field-label"> Age: </div>
+      <div class="field-value"> {{person.age}}</div>
+    </div>
+    <div class="field-container" *ngIf="person.hasOwnProperty('is_COVID_positive')">
+      <div class="field-label"> COVID status: </div>
+      <div class="field-value"> {{person | GetCovidStatus}} </div>
+    </div>
+  </div>
+</div>

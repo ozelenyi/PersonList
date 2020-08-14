@@ -1,0 +1,30 @@
+
+.mat-dialog-content {
+  display: flex;
+}
+
+.avatar-container {
+  flex: 1;
+  margin-right: 30px;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.data-container {
+  flex: 2;
+  min-width: 150px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.field-label {
+  font-weight: 600;
+}

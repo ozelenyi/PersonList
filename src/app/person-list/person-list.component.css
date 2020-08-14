@@ -1,7 +1,42 @@
 table {
   width: 100%;
+  border-top: 1px solid lightgrey;
+}
+
+th.mat-header-cell:last-child,
+td.mat-cell:last-child {
+  text-align: right;
+}
+
+.mat-row:hover {
+  background-color: rgba(105, 113, 108, 0.22);
+  cursor: pointer;
+}
+
+.slider-container {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.slider-container .label {
+  flex: 1;
+  font-size: 20px;
+  padding: inherit;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.slider-container .slider {
+  flex: 2;
+  flex-wrap: nowrap;
 }
 
 mat-slider {
-  width: 400px;
+  width: 65%;
+}
+
+mat-spinner {
+  margin: 15px auto;
 }

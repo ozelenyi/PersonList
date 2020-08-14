@@ -1,4 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cdk-overlay-pane.person-dialog {
+  position: relative!important;
+}
+button.close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 5px;
+  line-height: 14px;
+  min-width: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: grey;
+}
+button.close:focus {
+  outline: none;
+}
+
+button.close:hover {
+  color: black;
+  font-weight: bold;
+}
+
